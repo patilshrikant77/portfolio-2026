@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   location: "Pune, Maharashtra, India",
   email: "patilshrikant77@gmail.com",
   phone: "+91 9921908214",
-  linkedin: "https://www.linkedin.com/in/shrikant-patil",
+  linkedin: "https://www.linkedin.com/in/shrikant-patil-8a242541/",
   github: "https://github.com/patilshrikant77",
   bio: "Expert Full Stack Engineer with 12+ years of experience building high-performance, scalable user interfaces and backend systems. Specializing in Micro-Frontend Architecture, AI integration, and Cloud-Native solutions.",
 };

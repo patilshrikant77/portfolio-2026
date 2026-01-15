@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode Variables (Clean White/Gray) */
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+
+  .dark {
+    /* Dark Mode Variables (Deep Black) */
+    --background: #050505;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* Smooth transition when toggling modes */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* ORBIT ANIMATIONS */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-spin-slow {
+  animation: spin 40s linear infinite;
+}
+
+/* This counter-rotates the text so it stays readable while the circle spins */
+.animate-reverse-spin-slow {
+  animation: spin-reverse 40s linear infinite;
+}
+
+.animate-spin-slower {
+  animation: spin 60s linear infinite;
+}
+
+.animate-reverse-spin-slower {
+  animation: spin-reverse 60s linear infinite;
+}
+
+/* Responsive adjustments for orbits */
+@media (max-width: 768px) {
+  .animate-spin-slow {
+    /* Scale down orbit radius on mobile via CSS scale if needed, or rely on the w/h classes */
+  }
+}
